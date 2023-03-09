@@ -1,0 +1,124 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: "Noto Sans JP", sans-serif;
+  background-color: #ffffff92;
+  font-size: 13px;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background: linear-gradient(-45deg, #23a5d5a9, #e73c7ea1, #23a5d5a9, #23d5aba3);
+  background-size: 400% 400%;
+  animation: gradient 15s ease infinite;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 50px;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 3px 8px;
+  border: 1px solid rgba(214, 214, 214, 0.049);
+  border-radius: 20px;
+}
+
+h1 {
+  text-align: center;
+  font-size: 36px;
+}
+
+fieldset {
+  background-color: #ffffff00;
+  display: flex;
+  flex-direction: column;
+  border-radius: 6px;
+  border: 1px solid rgba(214, 214, 214, 0.049);
+  box-shadow: rgba(0.1, 0.1, 0.1, 0.1) 5px 5px 5px;
+  justify-content: center;
+  width: 110%;
+  margin: 10px;
+  padding: 6px 10px;
+}
+
+main > div {
+  color: var(--peach-600);
+  font-size: 12px;
+}
+
+.logo {
+  background-color: #ffffff00;
+  margin: 12px auto 70px;
+  width: 180px;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  border-radius: 6px;
+  width: 14rem;
+  height: 2.25rem;
+  color: black;
+  background-color: #1dd660;
+  font-size: 15px;
+  transition: all 0.3s;
+}
+
+button:hover {
+  background-color: whitesmoke;
+}
+
+button:active {
+  background-color: #1dd660;
+}
+
+input {
+  background-color: #ffffff00;
+  border: none;
+  width: 12rem;
+  font-size: 14px;
+}
+
+input:focus {
+  outline: none;
+}
+
+.success-message {
+  background-color: #ffffff00;
+}
+
+.failure-message {
+  background-color: #ffffff00;
+}
+
+.mismatch-message {
+  background-color: #ffffff00;
+}
+.hide {
+  background-color: #ffffff00;
+  display: none;
+}
+
+.signup {
+  margin-top: 40px;
+  width: 90%;
+  padding: 0;
+  border: none;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
